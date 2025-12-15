@@ -38,7 +38,7 @@ int main(void) {
         sobel_u8_omp(src, dst, w, h);
     }
 
-    const int iterations = 100;
+    const int iterations = 10;
     double t0 = omp_get_wtime();
     for (int i = 0; i < iterations; ++i) {
         sobel_u8_omp(src, dst, w, h);
